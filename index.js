@@ -15,7 +15,7 @@ app.use('/weather', weatherRouter);
 
 
 app.use((req, res) => {
-  res.status(404).json({ message: 'Ruta no encontrada' });
+  res.status(404).json({ message: 'Esta ruta no existe' });
 });
 
 const PORT = process.env.PORT || 3000;
