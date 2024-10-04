@@ -20,7 +20,6 @@ const verifyToken = (req, res, next) => {
   });
 };
 
-
 const isNumber = (value) => {
   return !isNaN(parseFloat(value)) && isFinite(value);
 };

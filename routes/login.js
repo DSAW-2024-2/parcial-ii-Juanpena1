@@ -7,6 +7,7 @@ const USER = {
   password: 'admin'
 };
 
+
 router.post('/', (req, res) => {
   const { email, password } = req.body;
  
@@ -18,5 +19,4 @@ router.post('/', (req, res) => {
     res.status(401).json({ message: 'Credenciales incorrectas' });
   }
 });
-
 module.exports = router;
